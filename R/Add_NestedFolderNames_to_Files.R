@@ -1,3 +1,5 @@
+#'Add_NestedFolderNames_to_Files
+#'
 #' Adding the folder names in the path to their files
 #'
 #' @param parent_folder Folder with nested subfolders containing the files to be renamed by adding their folder names in the path.

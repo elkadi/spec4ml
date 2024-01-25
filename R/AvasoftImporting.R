@@ -7,8 +7,9 @@
 #' @return a single csv file with all spectra merged and suitable for analysis.
 #' @import hyperSpec
 #' @examples
+#' avasoft_import(folder=getwd(),spectrometer="nir",saturation=5, file="MergedSpectra.csv")
 
-avasoft_importt<-function(folder=getwd(),spectrometer="nir",saturation=5, file="MergedSpectra.csv"){
+avasoft_import<-function(folder=getwd(),spectrometer="nir",saturation=5, file="MergedSpectra.csv"){
 if(spectrometer=="nir"){spectrometerID="*_1503184U2"}else{spectrometerID="*_1503137U2"}
 ##importing Files all files in a folder ending with the spectrometer ID
 files <- Sys.glob(paste0(folder,"/",spectrometerID,".TXT"))

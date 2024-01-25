@@ -2,7 +2,7 @@
 % Please edit documentation in R/SpectraSmoothing.R
 \name{SpectraSmoothing}
 \alias{SpectraSmoothing}
-\title{create a list of all spectra after 74 diverse preprocessing}
+\title{SpectraSmoothing}
 \usage{
 SpectraSmoothing(rawspectra, filter_lengths = seq(3, 20, by = 2))
 }

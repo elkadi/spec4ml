@@ -1,3 +1,5 @@
+#' tnName
+#'
 #' transpose a df and make the 1st row the new column names
 #'
 #' @param fx a dataframe

@@ -1,4 +1,6 @@
-#' unit vector normalization 
+#' uvnormalize
+#'
+#' unit vector normalization
 #'
 #' @param x a hyperspec object.
 #' @return a hyperspec object of unit vector normalized preprocessed spectra.

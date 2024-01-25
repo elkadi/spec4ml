@@ -1,3 +1,15 @@
+#' PLSCV
+#'
+#' Perform crossvalidation for PLS regression (This version need further revision)
+#'
+#' @param M a hyperspec object
+#' @param V the traget variable
+#' @param validation the type of the CV (default=repeatedcv).
+#' @return The R2 and and best tune parameters
+#' @import hyperSpec
+#' @examples PLSCV(M,V,ncompMax=20,validation="repeatedcv")
+
+
 PLSCV<-function(M,V,ncompMax=20,validation="repeatedcv"){
   f<-paste0(V,"~spc")
   ctrl <- caret::trainControl(method=validation,repeats = 3)

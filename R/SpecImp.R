@@ -1,3 +1,5 @@
+#' SpecImp
+#'
 #' read csv files separated with ";" in R
 #'
 #' @param x a csv file.

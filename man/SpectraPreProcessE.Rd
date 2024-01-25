@@ -2,7 +2,7 @@
 % Please edit documentation in R/SpectraPreProcessE.R
 \name{SpectraPreProcessE}
 \alias{SpectraPreProcessE}
-\title{create a list of all spectra after 74 diverse preprocessing}
+\title{SpectraPreProcessE}
 \usage{
 SpectraPreProcessE(rawspectra, SmLn = 3, SmMn = 5, SmHn = 11)
 }

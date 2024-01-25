@@ -1,8 +1,10 @@
+#' SpectraSmoothing
+#'
 #' create a list of all spectra after 74 diverse preprocessing
 #'
 #' @param rawspectra a hyperspec object.
 #' @return A list of preprocessed spectra.
-#' @import hyperspec
+#' @import hyperSpec
 #' @import pracma
 #' @examples
 #' SpectraSmoothing(rawspectra,filter_lengths=seq(3, 20, by = 2))
