@@ -4,7 +4,7 @@ Title: spec4ml
 Version: 0.1.0
 Author: Omar Anwar Elkadi
 Maintainer: Omar Anwar Elkadi <omar.elkadi@live.com>
-Description: provide functions for preprocessing and chemometric analysis of spectra data.
+Description: provide functions for preprocessing and chemometric analysis of spectra data with special consideration for machine learning applications.
 License: MIT License
 Encoding: UTF-8
 LazyData: true
