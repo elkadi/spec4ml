@@ -15,6 +15,3 @@ a hyperspec object of SNV preprocessed spectra.
 \description{
 Preprocess spectra in a hyperspec format by SNV
 }
-\examples{
-snvh(spectra)
-}

@@ -6,8 +6,8 @@
 #' @param new_folder  the Folder to contain the copied files.
 #' @param recurse to specify if it recurse or not (default recurse=FALSE)
 #' @return All the files to be copied in the new_folder
-#' @examples
-#' copy_from_subfolders(parent_folder, new_folder, recurse=FALSE)
+#' @import fs
+#' @export
 
 
 copy_from_subfolders <- function(parent_folder, new_folder, recurse=FALSE) {

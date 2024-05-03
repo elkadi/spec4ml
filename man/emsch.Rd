@@ -15,6 +15,3 @@ a hyperspec object of emsc preprocessed spectra.
 \description{
 preprocess spectra in hyperspec formate by emsc
 }
-\examples{
-emsch(spectra)
-}

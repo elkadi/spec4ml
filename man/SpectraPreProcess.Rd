@@ -18,6 +18,8 @@ SpectraPreProcess(
 
 \item{SmLn}{Numeric. The filter length of the low level of smoothing to be attempted.}
 
+\item{SmMn}{Numeric. The filter length of the medium level of smoothing to be attempted.}
+
 \item{SmHn}{Numeric. The filter length of the high level of smoothing to be attempted.}
 
 \item{ExtraDerivativeLSm}{Numeric. The filter length of the low level of smoothing to be attempted for both the 1st and 2nd derivatives in addition to the default values (3).}
@@ -29,7 +31,4 @@ A list of 66 preprocessed spectra and a list of their names.
 }
 \description{
 create a list of all spectra after 66 diverse preprocessing
-}
-\examples{
-SpectraPreProcess(spectra,SmLn=3,SmMn=5,SmHn=11, ExtraDerivativeLSm=15, ExtraDerivativeHSm=17)
 }

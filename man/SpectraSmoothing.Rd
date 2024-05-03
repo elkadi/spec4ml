@@ -8,13 +8,12 @@ SpectraSmoothing(rawspectra, filter_lengths = seq(3, 20, by = 2))
 }
 \arguments{
 \item{rawspectra}{a hyperspec object.}
+
+\item{filter_lengths}{a list of filter lengths to be attempted for smoothing}
 }
 \value{
 A list of preprocessed spectra.
 }
 \description{
 create a list of all spectra after 74 diverse preprocessing
-}
-\examples{
-SpectraSmoothing(rawspectra,filter_lengths=seq(3, 20, by = 2))
 }

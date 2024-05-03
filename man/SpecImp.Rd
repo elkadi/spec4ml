@@ -4,19 +4,18 @@
 \alias{SpecImp}
 \title{SpecImp}
 \usage{
-SpecImp(x, y = 8)
+SpecImp(x, y = 8, delimiter = ";")
 }
 \arguments{
 \item{x}{a csv file.}
 
 \item{y}{the number of lines to be skipped.}
+
+\item{delimiter}{A delimiter for specifying the boundary between columns. Defaults is ";"}
 }
 \value{
 a dataframe of the imported spectra.
 }
 \description{
 read csv files separated with ";" in R
-}
-\examples{
-ImportedFiles<- lapply (files, SpecImp)
 }

@@ -4,12 +4,12 @@
 #'
 #' @param rawspectra a hyperspec object of the spectra to be prepossessed.
 #' @param SmLn Numeric. The filter length of the low level of smoothing to be attempted.
+#' @param SmMn Numeric. The filter length of the medium level of smoothing to be attempted.
 #' @param SmHn Numeric. The filter length of the high level of smoothing to be attempted.
 #' @return A list of 74 preprocessed spectra and a list of their names these include preprocessing by emsc, which can cause data leakage in case of using the set in Crossvalidation; in such case use SpectraPreProcess function.
 #' @import hyperSpec
 #' @import pracma
-#' @examples
-#' SpectraPreProcessE(spectra,SmLn=3,SmMn=5,SmHn=11)
+#' @export
 SpectraPreProcessE<-function(rawspectra,SmLn=3,SmMn=5,SmHn=11){
   ####SMs######
   SmL<-apply(rawspectra,1,pracma::savgol,fl=SmLn, forder = 2, dorder = 0);colnames(SmL$spc)<-colnames(rawspectra$spc)

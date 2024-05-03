@@ -11,6 +11,8 @@ PLSCV(M, V, ncompMax = 20, validation = "repeatedcv")
 
 \item{V}{the traget variable}
 
+\item{ncompMax}{maximum number of priniciple componants}
+
 \item{validation}{the type of the CV (default=repeatedcv).}
 }
 \value{
@@ -18,7 +20,4 @@ The R2 and and best tune parameters
 }
 \description{
 Perform crossvalidation for PLS regression (This version need further revision)
-}
-\examples{
-PLSCV(M,V,ncompMax=20,validation="repeatedcv")
 }

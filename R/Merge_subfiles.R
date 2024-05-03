@@ -4,10 +4,10 @@
 #'
 #' @param parent_folder Folder with subfolders containing the subfiles to be merged.
 #' @param new_folder Folder for the subfiles to be copied to.
+#' @param recurse  a logical to indicate if it should include subfolders (Default is FALSE)
 #' @return All files copied from subfolders in the parent_folder to the new_folder.
 #' @import fs
-#' @examples
-#' Merge_subfiles(parent_folder, new_folder, recurse=FALSE)
+#' @export
 
 
 Merge_subfiles <- function(parent_folder, new_folder, recurse=FALSE) {

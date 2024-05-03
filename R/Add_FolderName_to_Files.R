@@ -4,8 +4,7 @@
 #'
 #' @param parent_folder Folder with subfolders containing the files to be renamed by adding their folder name.
 #' @return All files in subfolders in the parent_folder renamed by adding their folder name.
-#' @examples
-#' Add_FolderName_to_Files(parent_folder)
+#' @export
 
 
 Add_FolderName_to_Files <- function(parent_folder) {

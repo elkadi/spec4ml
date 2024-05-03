@@ -4,7 +4,7 @@
 #'
 #' @param fx a dataframe
 #' @return transposed dataframe with 1st row of the original dataframe as the new column names
-#' @examples tnName(df)
+#' @export
 
 tnName<-function(fx){
   fxT<-t(fx)

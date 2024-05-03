@@ -15,6 +15,3 @@ a hyperspec object of unit vector normalized preprocessed spectra.
 \description{
 unit vector normalization
 }
-\examples{
-uvnormalize(x)
-}

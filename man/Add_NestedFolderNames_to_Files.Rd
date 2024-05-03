@@ -15,6 +15,3 @@ non--All files in subfolders in the parent_folder will be renamed by adding thei
 \description{
 Adding the folder names in the path to their files
 }
-\examples{
-Add_NestedFolderNames_to_Files(parent_folder)
-}

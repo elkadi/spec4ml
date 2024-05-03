@@ -6,16 +6,17 @@
 #' @param file the merged file.
 #' @return a single csv file with all spectra merged and suitable for analysis.
 #' @import hyperSpec
-#' @examples
-#' avasoft_import(folder=getwd(),spectrometer="nir",saturation=5, file="MergedSpectra.csv")
+#' @importFrom utils write.csv
+#' @export
 
 avasoft_import<-function(folder=getwd(),spectrometer="nir",saturation=5, file="MergedSpectra.csv"){
 if(spectrometer=="nir"){spectrometerID="*_1503184U2"}else{spectrometerID="*_1503137U2"}
+
 ##importing Files all files in a folder ending with the spectrometer ID
 files <- Sys.glob(paste0(folder,"/",spectrometerID,".TXT"))
-files <- files [seq (1, length (files))]
+bnames<-basename(files)
 ImportedFiles<- lapply (files, SpecImp)
-
+##Calculating and adding Absorbance, and removing non-target columns
 for (i in 1:length(ImportedFiles)){
   Abs<-NULL
   for (wl in 1: nrow(ImportedFiles[[i]])){
@@ -28,23 +29,26 @@ for (i in 1:length(ImportedFiles)){
   }
   ImportedFiles[[i]]<-cbind(ImportedFiles[[i]],Abs)
 }
+
 for (i in 1:length(ImportedFiles)){
   ImportedFiles[[i]]<-ImportedFiles[[i]][-c(2,3,4)]
 }
-##Approbriate naming
-names(ImportedFiles)<-list.files(folder, pattern = paste0(spectrometerID,".TXT"))
+##Appropriate naming
+###Samples names
+names(ImportedFiles)<-bnames
 names(ImportedFiles)<-sub(".TXT", "", names(ImportedFiles))
 names(ImportedFiles)<-gsub(spectrometerID, "", names(ImportedFiles))
-
+###Wavelength names
 WL<-ImportedFiles[[1]][1]
 colnames(WL)<-"WL"
 SampleNames<-names(ImportedFiles)
-for (i in seq(1,length(files), by=1)){
+###Adding the sample names
+for (i in 1:length(files)){
   colnames(ImportedFiles[[i]])<-c("WL",SampleNames[i])
 }
 df<-WL
 #For loop to merge the spectra
-for (i in seq(1,length(files), by=1)){
+for (i in 1:length(files)){
   Sample<-names(ImportedFiles)[i]
   colnames(ImportedFiles[[i]][2])<-Sample
   df<-cbind(df,ImportedFiles[[i]][2])

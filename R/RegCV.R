@@ -4,11 +4,13 @@
 #'
 #' @param M a hyperspec object
 #' @param V the traget variable
+#' @param comp maximum number of principle components
 #' @param model the type of the model (default=pls).
 #' @param validation the type of the CV (default=repeatedcv).
 #' @return The R2 and and best tune parameters
 #' @import hyperSpec
-#' @examples RegCV(M,V,comp=20,model= "pls",validation="repeatedcv")
+#' @importFrom stats as.formula
+#' @export
 
 RegCV<-function(M,V,comp=20,model= "pls",validation="repeatedcv"){
   f<-paste0(V,"~spc")

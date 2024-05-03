@@ -15,6 +15,3 @@ All files in subfolders in the parent_folder renamed by adding their folder name
 \description{
 Adding the folder names to their files
 }
-\examples{
-Add_FolderName_to_Files(parent_folder)
-}

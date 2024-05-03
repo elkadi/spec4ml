@@ -11,6 +11,8 @@ SpectraPreProcessE(rawspectra, SmLn = 3, SmMn = 5, SmHn = 11)
 
 \item{SmLn}{Numeric. The filter length of the low level of smoothing to be attempted.}
 
+\item{SmMn}{Numeric. The filter length of the medium level of smoothing to be attempted.}
+
 \item{SmHn}{Numeric. The filter length of the high level of smoothing to be attempted.}
 }
 \value{
@@ -18,7 +20,4 @@ A list of 74 preprocessed spectra and a list of their names these include prepro
 }
 \description{
 create a list of all spectra after 74 diverse preprocessing
-}
-\examples{
-SpectraPreProcessE(spectra,SmLn=3,SmMn=5,SmHn=11)
 }

@@ -10,13 +10,12 @@ Merge_subfiles(parent_folder, new_folder, recurse = FALSE)
 \item{parent_folder}{Folder with subfolders containing the subfiles to be merged.}
 
 \item{new_folder}{Folder for the subfiles to be copied to.}
+
+\item{recurse}{a logical to indicate if it should include subfolders (Default is FALSE)}
 }
 \value{
 All files copied from subfolders in the parent_folder to the new_folder.
 }
 \description{
 Copying files from sub-folders in one folder
-}
-\examples{
-Merge_subfiles(parent_folder, new_folder, recurse=FALSE)
 }

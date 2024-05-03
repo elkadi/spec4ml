@@ -19,6 +19,3 @@ All the files to be copied in the new_folder
 \description{
 Adding the folder names to their files
 }
-\examples{
-copy_from_subfolders(parent_folder, new_folder, recurse=FALSE)
-}

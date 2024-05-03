@@ -11,6 +11,8 @@ RegCV(M, V, comp = 20, model = "pls", validation = "repeatedcv")
 
 \item{V}{the traget variable}
 
+\item{comp}{maximum number of principle components}
+
 \item{model}{the type of the model (default=pls).}
 
 \item{validation}{the type of the CV (default=repeatedcv).}
@@ -20,7 +22,4 @@ The R2 and and best tune parameters
 }
 \description{
 Perform crossvalidation for regression models (This version need further revision)
-}
-\examples{
-RegCV(M,V,comp=20,model= "pls",validation="repeatedcv")
 }

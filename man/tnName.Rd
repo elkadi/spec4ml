@@ -15,6 +15,3 @@ transposed dataframe with 1st row of the original dataframe as the new column na
 \description{
 transpose a df and make the 1st row the new column names
 }
-\examples{
-tnName(df)
-}

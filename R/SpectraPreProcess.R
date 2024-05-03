@@ -4,14 +4,14 @@
 #'
 #' @param rawspectra a hyperspec object of the spectra to be prepossessed.
 #' @param SmLn Numeric. The filter length of the low level of smoothing to be attempted.
+#' @param SmMn Numeric. The filter length of the medium level of smoothing to be attempted.
 #' @param SmHn Numeric. The filter length of the high level of smoothing to be attempted.
 #' @param ExtraDerivativeLSm Numeric. The filter length of the low level of smoothing to be attempted for both the 1st and 2nd derivatives in addition to the default values (3).
 #' @param ExtraDerivativeHSm Numeric. The filter length of the high level of smoothing to be attempted for both the 1st and 2nd derivatives in addition to the default values (9,11).
 #' @return A list of 66 preprocessed spectra and a list of their names.
 #' @import hyperSpec
 #' @import pracma
-#' @examples
-#' SpectraPreProcess(spectra,SmLn=3,SmMn=5,SmHn=11, ExtraDerivativeLSm=15, ExtraDerivativeHSm=17)
+#' @export
 SpectraPreProcess<-function(rawspectra,SmLn=3,SmMn=5,SmHn=11, ExtraDerivativeLSm=15, ExtraDerivativeHSm=17){
   ####SMs######
   SmL<-apply(rawspectra,1,pracma::savgol,fl=SmLn, forder = 2, dorder = 0);colnames(SmL$spc)<-colnames(rawspectra$spc)

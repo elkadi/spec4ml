@@ -3,11 +3,11 @@
 #' create a list of all spectra after 74 diverse preprocessing
 #'
 #' @param rawspectra a hyperspec object.
+#' @param filter_lengths a list of filter lengths to be attempted for smoothing
 #' @return A list of preprocessed spectra.
 #' @import hyperSpec
 #' @import pracma
-#' @examples
-#' SpectraSmoothing(rawspectra,filter_lengths=seq(3, 20, by = 2))
+#' @export
 
 SpectraSmoothing <- function(rawspectra, filter_lengths=seq(3, 20, by = 2)) {
   SmL <- apply(rawspectra, 1, function(x) {
