@@ -1,27 +1,9 @@
-# This CITATION.cff file was generated with cffinit.
-# Visit https://bit.ly/cffinit to generate yours today!
-
 cff-version: 1.2.0
-title: >-
-  spec4ml: a package for handling and preprocessing spectral
-  data for machine learning applications
-message: >-
-  If you use this software, please cite it using the
-  metadata from this file.
-type: software
+message: "If you use this software, please cite it as below."
 authors:
-  - given-names: Omar Anwar
-    family-names: Elkadi
-    email: omar.elkadi@live.com
-    orcid: 'https://orcid.org/0000-0002-4554-1340'
-    affiliation: University of Eastern Finland
-repository-code: 'https://github.com/elkadi/spec4ml'
-abstract: >-
-  a package for handling and preprocessing spectral data for
-  machine learning applications
-keywords:
-  - Spectra
-  - Machine Learning
-  - Spectroscopy
-version: '1.00'
-date-released: '2024-05-30'
+  - family-names: Elkadi
+    given-names: Omar Anwar
+    orcid: https://orcid.org/0000-0002-4554-1340
+title: "spec4ml: a package for handling and preprocessing spectral data for machine learning applications"
+version: 1.0.0
+date-released: 2024-05-20

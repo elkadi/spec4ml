@@ -1,7 +1,7 @@
 Package: spec4ml
 Type: Package
 Title: spec4ml 
-Version: 0.1.0
+Version: 1.0.1
 Author: Omar Anwar Elkadi
 Maintainer: Omar Anwar Elkadi <omar.elkadi@live.com>
 Description: provide functions for preprocessing and chemometric analysis of spectra data with special consideration for machine learning applications.
@@ -16,5 +16,7 @@ Imports:
   prospectr,
   fs,
   pracma,
-  utils
-RoxygenNote: 7.2.3
+  utils,
+  rlang,
+  dplyr
+RoxygenNote: 7.3.3
