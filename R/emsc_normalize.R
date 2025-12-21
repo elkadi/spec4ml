@@ -38,6 +38,7 @@
 #' # Normalize and save to file
 #' emsc_normalize(
 #'   spectra_file = "NIR_spectra.csv",
+#'   group_col = "Day",
 #'   controls_file = "Control_spectra.csv"
 #' )
 #'
@@ -45,6 +46,7 @@
 #' normalized_df <- emsc_normalize(
 #'   spectra_file = "NIR_spectra.csv",
 #'   controls_file = "Control_spectra.csv",
+#'   group_col = "Day",
 #'   save_output = FALSE
 #' )
 #' }
